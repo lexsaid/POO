@@ -4,4 +4,4 @@
 - Correo: talli_stq@hotmail.com
 
 ## Actticidad 1
-- programa 1
+- _p01_HolaMundo
