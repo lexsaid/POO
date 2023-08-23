@@ -3,13 +3,13 @@
 - Nombre: Lex Said Garcia Rodriguez
 - Correo: talli_stq@hotmail.com
 
-## Actticidad 1
+## actividad 1
 - _p01_HolaMundo
 - _p02_AreaCirculo
 - _p03_AreaTriangulo
 - _p04_PagaTrabajador
 
-## Actticidad 1
+## actividad 2
 - _p05_OperacionesMatematicas
 - _p06_PromedioCalificaciones
 - _p07_OperadoresAsignacion
