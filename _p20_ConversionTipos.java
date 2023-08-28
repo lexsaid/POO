@@ -16,7 +16,6 @@ public class _p20_ConversionTipos {
         long var5 = 1234567890123456L;
         int var6 = (int) var5;
         int var7 = 21448364;
-       
         short var8 = (short) var7;
        
         System.out.println(String.format("Manual con casting de long a int : %d %d",var5,var6));
