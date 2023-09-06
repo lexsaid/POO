@@ -31,8 +31,10 @@ public class _p38_aceptarestudiantev2 {
                 }
                 promedio= suma/3;
                 out.println("tu promedio es: "+promedio);
+
                 if (promedio>=8){
                     out.println(String.format("felicidades %s, lograste entrar a la universidad \nedad: %.0f, promedio: %.2f, sexo: %s", nombre, edad, promedio, sexo));
+                
                 }else{
                     out.println("solo aceptamos promedios mayores de 8 ");
                 }
