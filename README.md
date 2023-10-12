@@ -138,7 +138,6 @@
 - _p92_MayorMenor
 - _p93_ParesImpares 
 
-
 ## actividad 15
 - _p94_Empleado01
 - _p95_Empleado02
@@ -154,3 +153,11 @@
 - _p101_TrabajoPersona
 - _p102_AutorLibro
 - _p103_ClienteFactura
+
+## practica 8
+- _p104_PuntoCirculo
+- _p105_PuntoTriangulo
+
+## actividad 17
+- _p106_Persona
+- _p107_Forma
