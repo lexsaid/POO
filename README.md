@@ -177,3 +177,14 @@
 
 ## examen 2
 - _p113_SegundoExamenParcial
+
+## actividad 20
+- _p114_Animal
+- _p115_Telefono
+- _p116_Juego
+- _p117_FiguraGeometrica
+
+## actividad 21
+- _p118_Calculadora
+- _p119_Organismo
+ 
