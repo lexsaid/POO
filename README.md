@@ -200,3 +200,8 @@
 - _p126_Excepcion6
 - _p127_MiExcepcion
  
+## practica 12
+- _p128_ExcepcionRaiz
+- _p129_ExcepcionDulces
+- _p130_ExcepcionEdades
+- _p131_ExcepcionTemperatura
