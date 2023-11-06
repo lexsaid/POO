@@ -199,4 +199,17 @@
 - _p125_Excepcion5
 - _p126_Excepcion6
 - _p127_MiExcepcion
- 
+
+## practica 13
+- _p128_ExcepcionRaiz
+- _p129_ExcepcionDulces
+- _p130_ExcepcionEdades
+- _p131_ExcepcionTemperatura
+
+## actividad 23
+- _p132_Archivos1
+- _p133_Archivos2
+- _p134_Archivos3
+- _p135_Archivos4
+- _p136_Archivos5
+
