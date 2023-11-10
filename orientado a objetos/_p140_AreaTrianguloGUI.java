@@ -57,15 +57,15 @@ public class _p140_AreaTrianguloGUI extends JFrame implements ActionListener {
         
     }
 
-        public static void main(String[] args) {
+    public static void main(String[] args) {
 
-            _p140_AreaTrianguloGUI app = new _p140_AreaTrianguloGUI();
-            app.setBounds(10, 10, 300, 200);
-            app.setLocationRelativeTo(null);
-            //app.setSize(500, 200);
-            app.setVisible(true);
-            app.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        _p140_AreaTrianguloGUI app = new _p140_AreaTrianguloGUI();
+        app.setBounds(10, 10, 300, 200);
+        app.setLocationRelativeTo(null);
+        //app.setSize(500, 200);
+        app.setVisible(true);
+        app.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-        }
+    }
 
 }
