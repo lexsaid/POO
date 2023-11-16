@@ -232,3 +232,6 @@
 
 ## actividad 26
 - _p146_HolaMundoGUI_V2
+
+## Examen 3
+- _p147_TercerExamenParcial 
