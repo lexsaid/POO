@@ -111,7 +111,7 @@ public class App extends JFrame implements ActionListener {
         txtSexo = new JTextField();
         pnlDatos.add(txtSexo);
 
-        lblEstadoCivil = new JLabel("Estado Civil (Casado/Soltero) ", SwingConstants.RIGHT);
+        lblEstadoCivil = new JLabel("Estado Civil (Casado/Solitario) ", SwingConstants.RIGHT);
         pnlDatos.add(lblEstadoCivil);
         txtEstadiCivil = new JTextField();
         pnlDatos.add(txtEstadiCivil);
@@ -231,7 +231,7 @@ public class App extends JFrame implements ActionListener {
 
             if(jugador.getEstadoCivil().equals("CASADO")){
                 casados++;
-            }else if(jugador.getEstadoCivil().equals("SOLTERO")){
+            }else if(jugador.getEstadoCivil().equals("SOLITARIO")){
                 solteros++;
             }
 
@@ -251,17 +251,13 @@ public class App extends JFrame implements ActionListener {
             jdlAcercaDe.setVisible(true);
         
         } else if (e.getSource() == smnAbrir) {
-
             fchArchivo = new JFileChooser();
             fchArchivo.setCurrentDirectory(new File("."));
-            
             fchArchivo.setFileFilter(new FileNameExtensionFilter("Archivos de datos(.dat)", new String[]{"dat"}));
             int res = fchArchivo.showOpenDialog(null);
             File archivo = fchArchivo.getSelectedFile();
-
             if (res == JFileChooser.APPROVE_OPTION) {
                 File arch = fchArchivo.getSelectedFile();
-
                 try {
                     datos = Util.desSerializarDatos(arch.getName());
                     this.cargarDatos();
@@ -276,24 +272,16 @@ public class App extends JFrame implements ActionListener {
 
             fchArchivo = new JFileChooser();
             fchArchivo.setFileFilter(new FileNameExtensionFilter("Archivos de datos(.dat)", new String[]{"dat"}));
-            
             fchArchivo.setCurrentDirectory(new File("."));
             int res = fchArchivo.showSaveDialog(this);
             File archivo = fchArchivo.getSelectedFile();
 
             if (res == JFileChooser.APPROVE_OPTION) {
-                
-                String nombreArchivo = archivo.getName();
-                // Agregar la extensión ".dat" al nombre si no la tiene
-                if (!nombreArchivo.toLowerCase().endsWith(".dat")) {
-                    nombreArchivo += ".dat";
-                }
-                // Crear un nuevo archivo con el nombre y la extensión
-                File arch = new File(fchArchivo.getCurrentDirectory(), nombreArchivo);
-
+                File arch = fchArchivo.getSelectedFile();
                 try {
                     Util.serializarDatos(arch.getName(),datos);
-                    JOptionPane.showMessageDialog(this, "Datos Grabados en : " + arch.getAbsolutePath(),"Correcto" ,JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(this, "Datos Grabados en : " +
+                    arch.getName(),"Correcto" ,JOptionPane.INFORMATION_MESSAGE);
                 
                 } catch (Exception e2) {
                     JOptionPane.showMessageDialog(this, "Error al procesar el archivo", "Error",JOptionPane.ERROR_MESSAGE);
@@ -334,7 +322,7 @@ public class App extends JFrame implements ActionListener {
                 return;
             }
 
-            if (!estadoCivil.equals("CASADO") && !estadoCivil.equals("SOLTERO")) {
+            if (!estadoCivil.equals("CASADO") && !estadoCivil.equals("SOLITARIO")) {
                 JOptionPane.showMessageDialog(null, "Escribe el estado civil como se pide", "Error", JOptionPane.ERROR_MESSAGE);
                 return;
             }
